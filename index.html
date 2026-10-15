@@ -18,12 +18,13 @@ h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*100cqw/
 .intro{display:grid;grid-template-columns:20.9cqw 1fr;gap:5cqw;align-items:start;margin-bottom:2.5cqw}
 .photo{margin:0} /* swap the <img> below for your photo: <img src="assets/me.jpg" alt="Andrew"> */
 .contacts{display:flex;flex-wrap:wrap;gap:1.5cqw 2cqw;align-items:center;margin-bottom:1cqw}
-.contacts a{display:block;border-radius:6px} .contacts a:focus-visible,.contacts a:hover{outline:2px solid #6f86c9;outline-offset:4px}
+.contacts a{display:block;border-radius:6px;background:linear-gradient(transparent 72%,rgba(160,180,230,.5) 72%);transition:background-color .15s} .contacts a:focus-visible,.contacts a:hover{outline:2px solid #6f86c9;outline-offset:4px}
 .company{display:flex;justify-content:space-between;align-items:flex-end;gap:2cqw;margin:3.2cqw 0 1.2cqw}
 .role{display:grid;grid-template-columns:32cqw 26cqw 1fr;column-gap:2cqw;align-items:end;margin-top:1.2cqw}
 .loc,.when{font-size:clamp(14px,1.85cqw,24px);line-height:1.2;color:var(--ink);font-variant-numeric:tabular-nums;font-feature-settings:"tnum";letter-spacing:.01em}
 .role .loc,.role .when{padding-bottom:.55em} .when{text-align:right;white-space:nowrap} .company .when{padding-bottom:.9em}
 .blurb{font-size:clamp(14px,1.85cqw,24px);line-height:1.5;color:var(--muted);margin:1.2cqw 0 3cqw 1.2cqw;max-width:60ch}
+.about p+p{margin-top:1em}
 .about{font-size:clamp(14px,1.85cqw,24px);line-height:1.6;color:var(--muted);max-width:60ch;margin-left:1.2cqw}
 .edu-note{margin:1.2cqw 0 0 1.2cqw} .edu-note img+img{margin-top:1cqw}
 @media (max-width:640px){:root{--s:1.7}
@@ -69,6 +70,10 @@ h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*100cqw/
 </section>
 
 <section aria-labelledby="about"><h2 id="about"><img class="" src="assets/about-me.png" alt="About Me" style="--w:2236" width="2236" height="387"></h2>
-  <p class="about">About me text goes here. Replace this placeholder with your own words.</p>
+  <!-- ABOUT ME: replace the text inside this div with your own. Use one <p> per paragraph. -->
+  <div class="about">
+    <p>Write your About Me text here. This is a placeholder: swap it for a few sentences about who you are, what you care about, and what you are looking for.</p>
+    <p>To add another paragraph, copy this &lt;p&gt; line and edit it.</p>
+  </div>
 </section>
 </main></div></body></html>
