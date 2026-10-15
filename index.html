@@ -1,1 +1,74 @@
-hello there, my name is andrew. so nice to see you
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visual Resume | Andrew Cosme</title>
+<meta name="description" content="Andrew Cosme's visual resume: QA automation, software engineering, and human-centered design.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fbf9f5;--ink:#222;--muted:#555;--s:1}
+*{box-sizing:border-box} html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+img{display:block;max-width:100%;height:auto;mix-blend-mode:multiply} /* white drawing backgrounds blend into the paper */
+.sheet{container-type:inline-size;max-width:1200px;margin:0 auto}
+.page{padding:2.5cqw 4cqw 6cqw 4.3cqw}
+img.t,.contacts img{width:calc(var(--w)*var(--s)*100cqw/2550);max-width:100%}
+h1,h2,h3,h4,p{margin:0;font-weight:inherit}
+h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*100cqw/2550)}
+.intro{display:grid;grid-template-columns:20.9cqw 1fr;gap:5cqw;align-items:start;margin-bottom:2.5cqw}
+.photo{margin:0} /* swap the <img> below for your photo: <img src="assets/me.jpg" alt="Andrew"> */
+.contacts{display:flex;flex-wrap:wrap;gap:1.5cqw 2cqw;align-items:center;margin-bottom:1cqw}
+.contacts a{display:block;border-radius:6px} .contacts a:focus-visible,.contacts a:hover{outline:2px solid #6f86c9;outline-offset:4px}
+.company{display:flex;justify-content:space-between;align-items:flex-end;gap:2cqw;margin:3.2cqw 0 1.2cqw}
+.role{display:grid;grid-template-columns:32cqw 26cqw 1fr;column-gap:2cqw;align-items:end;margin-top:1.2cqw}
+.loc,.when{font-size:clamp(14px,1.85cqw,24px);line-height:1.2;color:var(--ink);font-variant-numeric:tabular-nums;font-feature-settings:"tnum";letter-spacing:.01em}
+.role .loc,.role .when{padding-bottom:.55em} .when{text-align:right;white-space:nowrap} .company .when{padding-bottom:.9em}
+.blurb{font-size:clamp(14px,1.85cqw,24px);line-height:1.5;color:var(--muted);margin:1.2cqw 0 3cqw 1.2cqw;max-width:60ch}
+.about{font-size:clamp(14px,1.85cqw,24px);line-height:1.6;color:var(--muted);max-width:60ch;margin-left:1.2cqw}
+.edu-note{margin:1.2cqw 0 0 1.2cqw} .edu-note img+img{margin-top:1cqw}
+@media (max-width:640px){:root{--s:1.7}
+ .intro{grid-template-columns:1fr;gap:3cqw} .photo{width:48%}
+ .role{grid-template-columns:1fr auto;row-gap:.5em} .role .title{grid-column:1/3} .role .loc{padding:0} .role .when{padding:0}
+ .company{flex-wrap:wrap} .loc,.when,.blurb,.about{font-size:15px}}
+</style></head>
+<body><div class="sheet"><main class="page">
+<h1><img class="" src="assets/visual-resume.png" alt="Visual Resume" style="--w:2140" width="2140" height="345"></h1>
+<section class="intro" aria-label="Welcome">
+  <figure class="photo"><img class="" src="assets/photo.png" alt="Placeholder box for a photo of Andrew" style="--w:532" width="532" height="420"></figure>
+  <img class="" src="assets/welcome.png" alt="Welcome. So nice to meet you. My name is Andrew Cosme, and thank you for being here. This is my visual resume. This is my place to showcase the amazing work I&#39;ve done, build something I&#39;m proud of, display my skills and how I approach problem solving. You&#39;ll also meet the person I am, and what I stand for. If something stands out to you, if there&#39;s something we&#39;d connect on, please feel free to reach out to me at: (wanted to build something that put human creativity and centered human design at the forefront)" style="--w:1617" width="1617" height="722">
+</section>
+<nav class="contacts" aria-label="Contact">
+  <a href="tel:+16098641089" aria-label="Call (609) 864-1089"><img class="c" src="assets/contact-phone.png" alt="Phone: (609) 864-1089" style="--w:457" width="457" height="141"></a>
+  <a href="mailto:andrewmanuelcosme@gmail.com" aria-label="Email andrewmanuelcosme@gmail.com"><img class="c" src="assets/contact-email.png" alt="Email: andrewmanuelcosme@gmail.com" style="--w:747" width="747" height="173"></a>
+  <a href="https://www.linkedin.com/in/andrewmcosme/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><img class="c" src="assets/contact-linkedin.png" alt="LinkedIn: www.linkedin.com/in/andrewmcosme/" style="--w:1041" width="1041" height="139"></a>
+</nav>
+
+<section aria-labelledby="emp"><h2 id="emp"><img class="" src="assets/employment.png" alt="Employment History" style="--w:2300" width="2300" height="400"></h2>
+  <article><div class="company"><h3><img class="" src="assets/apple.png" alt="Apple Inc." style="--w:800" width="800" height="180"></h3><p class="when">2023 – Present</p></div>
+    <div class="role"><h4 class="title"><img class="t" src="assets/t-qa.png" alt="QA Automation Engineer" style="--w:700" width="700" height="120"></h4><p class="loc">Cupertino, CA</p><p class="when">June 2026 – Present</p></div>
+    <p class="blurb">What I did, projects worked on, skills used</p>
+    <div class="role"><h4 class="title"><img class="t" src="assets/t-ops.png" alt="Operations Specialist" style="--w:650" width="650" height="140"></h4><p class="loc">Chandler, AZ</p><p class="when">May 2024 – June 2026</p></div>
+    <p class="blurb">What I did, projects worked on, skills used</p>
+    <div class="role"><h4 class="title"><img class="t" src="assets/t-fwe.png" alt="Specialist (FWE)" style="--w:630" width="630" height="130"></h4><p class="loc">Scottsdale, AZ</p><p class="when">November 2023 – May 2024</p></div>
+    <p class="blurb">What I did, projects worked on, skills used</p></article>
+  <article><div class="company"><h3><img class="" src="assets/inventrade.png" alt="Inventrade, senior year capstone project" style="--w:1630" width="1630" height="175"></h3></div>
+    <div class="role"><h4 class="title"><img class="t" src="assets/t-dev.png" alt="Project Developer" style="--w:490" width="490" height="120"></h4><p class="loc">Remote</p><p class="when">August 2025 – May 2026</p></div>
+    <p class="blurb">What I did, projects worked on, skills used</p></article>
+  <article><div class="company"><h3><img class="" src="assets/foiiet.png" alt="FOIIET, higher education" style="--w:920" width="920" height="190"></h3><p class="when">August 2022 – November 2023</p></div>
+    <div class="role"><h4 class="title"><img class="t" src="assets/t-lead.png" alt="Team Lead" style="--w:470" width="470" height="125"></h4><p class="loc">Tempe, AZ</p><p class="when">February 2023 – November 2023</p></div>
+    <p class="blurb">What I did, projects worked on, skills used</p>
+    <div class="role"><h4 class="title"><img class="t" src="assets/t-spec.png" alt="Specialist" style="--w:340" width="340" height="125"></h4><p class="loc">Tempe, AZ</p><p class="when">August 2022 – February 2023</p></div></article>
+</section>
+
+<section aria-labelledby="edu"><h2 id="edu"><img class="" src="assets/education.png" alt="Education History" style="--w:2290" width="2290" height="405"></h2>
+  <article><div class="company"><h3><img class="" src="assets/asu.png" alt="Arizona State University" style="--w:1770" width="1770" height="190"></h3></div>
+    <div class="role"><h4 class="title"><img class="t" src="assets/t-bs.png" alt="BS Computer Science" style="--w:630" width="630" height="110"></h4><p class="loc">Tempe, AZ</p><p class="when">August 2022 – May 2026</p></div>
+    <div class="edu-note"><img class="" src="assets/focus.png" alt="With a focus in Software Engineering and a minor in Business" style="--w:1640" width="1640" height="110"><img class="" src="assets/awards.png" alt="Provost Scholarship recipient; Dean&#39;s List Fall 2022; Recorder, Community Service Chair, Sigma Alpha Mu" style="--w:2185" width="2185" height="195"></div></article>
+  <article><div class="company"><h3><img class="" src="assets/paraclete.png" alt="Paraclete High School" style="--w:1090" width="1090" height="160"></h3></div>
+    <div class="role"><h4 class="title"><img class="t" src="assets/t-diploma.png" alt="High School Diploma" style="--w:710" width="710" height="120"></h4><p class="loc">Palmdale, CA</p><p class="when">August 2018 – May 2022</p></div></article>
+</section>
+
+<section aria-labelledby="about"><h2 id="about"><img class="" src="assets/about-me.png" alt="About Me" style="--w:2236" width="2236" height="387"></h2>
+  <p class="about">About me text goes here. Replace this placeholder with your own words.</p>
+</section>
+</main></div></body></html>
