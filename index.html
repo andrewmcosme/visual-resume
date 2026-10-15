@@ -28,10 +28,13 @@ h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*var(--c
 .about p+p{margin-top:1em}
 .about{font-size:clamp(14px,1.85cqw,24px);line-height:1.6;color:var(--muted);max-width:60ch;margin-left:1.2cqw}
 .edu-note{margin:1.2cqw 0 0 1.2cqw} .edu-note img+img{margin-top:1cqw}
+.welcome{font-size:clamp(15px,1.95cqw,25px);line-height:1.6;color:var(--ink);max-width:62ch}
+.welcome h2{margin:0 0 .5em;font-size:1.55em;font-weight:500;line-height:1.2}
+.welcome p+p{margin-top:1em}
 @media (max-width:640px){:root{--s:1.7}
  .intro{grid-template-columns:1fr;gap:3cqw} .photo{width:48%} .contacts{flex-wrap:wrap}
  .role{grid-template-columns:1fr auto;row-gap:.5em} .role .title{grid-column:1/3} .role .loc{padding:0} .role .when{padding:0}
- .company{flex-wrap:wrap} .loc,.when,.blurb,.about{font-size:15px}}
+ .company{flex-wrap:wrap} .loc,.when,.blurb,.about,.welcome{font-size:15px}}
 </style></head>
 <body><div class="sheet"><main class="page">
 <h1><img class="" src="assets/visual-resume.png" alt="Visual Resume" style="--w:2140" width="2140" height="345"></h1>
@@ -39,7 +42,12 @@ h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*var(--c
   <figure class="photo"><img id="me" src="assets/me.jpg?v=2" alt="Photo of Andrew Cosme" width="420" height="420">
   <!-- Tries these file names in order until one loads. Once it works, you can delete this script and hard-code the src. -->
   <script>(function(){var i=document.getElementById("me"),n=["me.jpg","me.jpeg","me.png","photo.jpg","photo.jpeg","photo.webp","photo.png"],k=0;i.onerror=function(){k++;if(k<n.length)i.src="assets/"+n[k]+"?v=2";else i.onerror=null};})();</script></figure>
-  <img class="" src="assets/welcome.png" alt="Welcome. So nice to meet you. My name is Andrew Cosme, and thank you for being here. This is my visual resume. This is my place to showcase the amazing work I&#39;ve done, build something I&#39;m proud of, display my skills and how I approach problem solving. You&#39;ll also meet the person I am, and what I stand for. If something stands out to you, if there&#39;s something we&#39;d connect on, please feel free to reach out to me at: (wanted to build something that put human creativity and centered human design at the forefront)" style="--w:1617" width="1617" height="722">
+  <!-- WELCOME: replace the heading and paragraphs inside this div with your own writing. One <p> per paragraph. -->
+  <div class="welcome">
+    <h2>Welcome</h2>
+    <p>So nice to meet you. My name is Andrew Cosme, and thank you for being here. This is my visual resume. This is my place to showcase the amazing work I&#39;ve done, build something I&#39;m proud of, display my skills and how I approach problem solving. You&#39;ll also meet the person I am, and what I stand for. If something stands out to you, if there&#39;s something we&#39;d connect on, please feel free to reach out to me at:</p>
+    <p>Wanted to build something that put human creativity and centered human design at the forefront.</p>
+  </div>
 </section>
 <nav class="contacts" aria-label="Contact">
   <a href="tel:+16098641089" aria-label="Call (609) 864-1089"><img class="c" src="assets/contact-phone.png?v=2" alt="Phone: (609) 864-1089" style="--w:457" width="430" height="154"></a>
