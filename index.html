@@ -15,7 +15,7 @@ img{display:block;max-width:100%;height:auto;mix-blend-mode:multiply} /* white d
 img.t,.contacts img{width:calc(var(--w)*var(--s)*100cqw/2550);max-width:100%}
 h1,h2,h3,h4,p{margin:0;font-weight:inherit}
 h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*var(--co)*100cqw/2550)}
-.intro{display:grid;grid-template-columns:20.9cqw 1fr;gap:5cqw;align-items:start;margin-bottom:2.5cqw}
+.intro{display:grid;grid-template-columns:20.9cqw 1fr;gap:5cqw;align-items:center;margin-bottom:2.5cqw}
 .photo{margin:0}
 .photo img{mix-blend-mode:normal;border-radius:8px;width:100%;height:auto} /* swap the <img> below for your photo: <img src="assets/me.jpg" alt="Andrew"> */
 .contacts{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:1.5cqw;align-items:center;margin-bottom:1cqw}
@@ -28,7 +28,7 @@ h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*var(--c
 .about p+p{margin-top:1em}
 .about{font-size:clamp(14px,1.85cqw,24px);line-height:1.6;color:var(--muted);max-width:60ch;margin-left:1.2cqw}
 .edu-note{margin:1.2cqw 0 0 1.2cqw} .edu-note img+img{margin-top:1cqw}
-.welcome{font-size:clamp(15px,1.95cqw,25px);line-height:1.6;color:var(--ink);max-width:62ch}
+.welcome{font-size:clamp(13px,1.72cqw,22px);line-height:1.6;color:var(--ink);max-width:62ch}
 .welcome h2{margin:0 0 .5em;font-size:1.55em;font-weight:500;line-height:1.2}
 .welcome p+p{margin-top:1em}
 .welcome strong{font-weight:500}
@@ -38,7 +38,7 @@ h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*var(--c
 @media (max-width:640px){:root{--s:1.7}
  .intro{grid-template-columns:1fr;gap:3cqw} .photo{width:48%} .contacts{flex-wrap:wrap}
  .role{grid-template-columns:1fr auto;row-gap:.5em} .role .title{grid-column:1/3} .role .loc{padding:0} .role .when{padding:0}
- .company{flex-wrap:wrap} .loc,.when,.blurb,.about,.welcome{font-size:15px}}
+ .company{flex-wrap:wrap} .loc,.when,.blurb,.about{font-size:15px} .welcome{font-size:14px}}
 </style></head>
 <body><div class="sheet"><main class="page">
 <h1><img class="" src="assets/visual-resume.png?v=3" alt="Visual Resume" style="--w:2140" width="2140" height="345"></h1>
@@ -97,7 +97,16 @@ h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*var(--c
   </div></article>
   <article><div class="company"><h3><img class="" src="assets/inventrade.png?v=3" alt="Inventrade, senior year capstone project" style="--w:1630" width="1630" height="175"></h3></div>
     <div class="role"><h4 class="title"><img class="t" src="assets/t-dev.png?v=3" alt="Project Developer" style="--w:490" width="490" height="120"></h4><p class="loc">Remote</p><p class="when">August 2025 – May 2026</p></div>
-    <p class="blurb">What I did, projects worked on, skills used</p></article>
+    <div class="blurb">
+    <ul>
+      <li>Contributed to building the front-end and back-ends of InvenTrade’s site, with a focus in quality assurance. This consisted of writing and validating code being deployed on AWS servers.</li>
+      <li>Designed and schemed webpages with an intuitive UI design with human-computer interaction principles in mind.</li>
+      <li>Served a rotating role as SCRUM Master and project developer, streamlining communication, delivering results and due dates, ensuring our team met every deadline with a 100% on-time feature delivery date. Delivered realistic expectations for product delivery to cater and correct stakeholder expectations.</li>
+      <li>Final product can be viewed at (site may no longer be up): <a href="https://www.intentrade.ca" target="_blank" rel="noopener">www.intentrade.ca</a></li>
+    </ul>
+    <p class="skills"><strong>Technical skills:</strong> AWS, full-stack deployment, HTML, Python, more.</p>
+    <p class="skills"><strong>Soft skills:</strong> cross-functional collaboration, time management, project management, SCRUM and agile development, SDLC.</p>
+  </div></article>
   <article><div class="company"><h3><img class="" src="assets/foiiet.png?v=3" alt="Follett Higher Education" style="--w:920" width="920" height="190"></h3><p class="when">August 2022 – November 2023</p></div>
     <div class="role"><h4 class="title"><img class="t" src="assets/t-lead.png?v=3" alt="Team Lead" style="--w:470" width="470" height="125"></h4><p class="loc">Tempe, AZ</p><p class="when">February 2023 – November 2023</p></div>
     <p class="blurb">What I did, projects worked on, skills used</p>
