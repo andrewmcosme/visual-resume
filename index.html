@@ -35,6 +35,10 @@ h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*var(--c
 .blurb ul{margin:0;padding-left:1.2em} .blurb li+li{margin-top:.55em}
 .blurb .skills{margin-top:1em} .blurb .skills+.skills{margin-top:.4em} .blurb strong{font-weight:500;color:var(--ink)}
 .blurb a{color:var(--ink);overflow-wrap:anywhere;text-decoration:underline;text-decoration-color:rgba(111,134,201,.8);text-underline-offset:3px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:2cqw;margin:3cqw 0 0 1.2cqw}
+.gallery figure{margin:0} .gallery img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:8px;mix-blend-mode:normal}
+.gallery figcaption{margin-top:.6em;text-align:center;font-size:clamp(14px,1.6cqw,20px);line-height:1.2;color:var(--muted)}
+@media (max-width:640px){.gallery{margin-left:0;gap:2.5cqw}}
 @media (max-width:640px){:root{--s:1.7}
  .intro{grid-template-columns:1fr;gap:3cqw} .photo{width:48%} .contacts{flex-wrap:wrap}
  .role{grid-template-columns:1fr auto;row-gap:.5em} .role .title{grid-column:1/3} .role .loc{padding:0} .role .when{padding:0}
@@ -155,6 +159,12 @@ h1{margin-bottom:2cqw} h2{margin:4.5cqw 0 2.5cqw} h3{width:calc(var(--w)*var(--c
     <p>Outside of the office, I am an avid traveler and love trying new things. I grew up in a military household, and had to move every 2-5 years to start a new life again. My parents taught me to make the most of a situation no matter where we were, and that still carries with me to this day. Wherever I am in life, I always take time to try new foods, meet new people, and appreciate new ways of life, because that is what it’s is about. The experience also made me extremely adaptable and resilient, and I truly believe I could be happy anywhere because of this outlook on life.</p>
     <p>Some other activities I enjoy include snowboarding, hiking, reading, and staying active. My favorite place I’ve snowboarded was at Beaver Creek in Colorado, my favorite hike was at Zion National Park, and my favorite book is The Giver by Lois Lowry.</p>
     <p>That’s a little about me - now tell me about you! Please reach out to me at the contact information at the top of the page if we have something you want to connect over. Thank you so much for taking the time to read this far and learn more about me; I’d love to return the favor and learn about you. Thank you for your time.</p>
+  </div>
+
+  <div class="gallery">
+    <figure><img src="assets/about-hike.jpg?v=3" alt="Andrew hiking along a red-rock canyon trail in Zion National Park, wearing an Arizona State University tank top" width="800" height="1200" loading="lazy" style="object-position:50% 35%"><figcaption>Zion</figcaption></figure>
+    <figure><img src="assets/about-london.jpg?v=3" alt="Andrew leaning on a stone wall by the River Thames in London with Big Ben and the Houses of Parliament behind him" width="900" height="1200" loading="lazy" style="object-position:50% 60%"><figcaption>London</figcaption></figure>
+    <figure><img src="assets/about-snowboard.jpg?v=3" alt="Andrew in a helmet, goggles and face warmer carrying a snowboard on his shoulder in Flagstaff" width="900" height="1200" loading="lazy" style="object-position:50% 50%"><figcaption>Flagstaff</figcaption></figure>
   </div>
 </section>
 </main></div></body></html>
